@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daeha\\source\\repos\\KG_2\\KG_2\\KG_2.csproj",
+      "projectUniqueName": "C:\\Users\\daeha\\OneDrive\\문서\\GitHub\\Project_KG\\KG_2\\KG_2\\KG_2.csproj",
       "projectName": "KG_2",
-      "projectPath": "C:\\Users\\daeha\\source\\repos\\KG_2\\KG_2\\KG_2.csproj",
+      "projectPath": "C:\\Users\\daeha\\OneDrive\\문서\\GitHub\\Project_KG\\KG_2\\KG_2\\KG_2.csproj",
       "packagesPath": "C:\\Users\\daeha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daeha\\source\\repos\\KG_2\\KG_2\\obj\\",
+      "outputPath": "C:\\Users\\daeha\\OneDrive\\문서\\GitHub\\Project_KG\\KG_2\\KG_2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

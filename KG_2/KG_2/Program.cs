@@ -6,9 +6,9 @@ namespace KG_2
     {
         public static void Main()
         {
-            GameCore core = new GameCore();
+            GameManager core = new GameManager();
 
-            core.Run();
+            core.KGMain();
 
 
         }
