@@ -7,10 +7,17 @@ using System.Threading.Tasks;
 
 namespace KG_2
 {
-    public abstract class KGBehaviour : IAwake, IStart, IUpdate
+    public abstract class KGBehaviour
     {
         public bool Enabled, Started = false;
-        
+        protected Dungeon _dungeon=GameManager._dungeon;
+
+
+        public void Bind(Dungeon dungeon)
+        {
+            _dungeon = dungeon;
+        }
+
         //실제 사이클
 
         protected virtual void Awake_KGB()
@@ -25,9 +32,41 @@ namespace KG_2
         {
 
         }
-        //인터페이스 받기(Awake로 실행받을거임)
-        void IAwake.Awake() => Awake_KGB();
-        void IStart.Start() => Start_KGB();
-        void IUpdate.Update() => Update_KGB();
+        protected abstract void Death_KGB();
+        protected abstract void Enable_KGB();
+        protected abstract void Disable_KGB();
+
+
+
+        //받기
+        public void Awake()
+        {
+            Awake_KGB();
+        }
+        public void Start()
+        {
+            if(Started==true)
+            {
+                return;
+            }
+            Start_KGB();
+            Started = true;
+        }
+        public void Update()
+        {
+            Update_KGB();
+        }
+        public void Enable()
+        {
+            Enable_KGB();
+        }
+        public void Disable()
+        {
+            Disable_KGB();
+        }
+        public void Death()
+        {
+            Death_KGB();
+        }
     }
 }
